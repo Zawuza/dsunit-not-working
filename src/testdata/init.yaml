@@ -1,0 +1,12 @@
+Datastore: dsunittestdb
+Config:
+  DriverName: postgres
+  Descriptor: host=localhost port=5432 user=postgres password=postgres dbname=dsunittestdb sslmode=disable
+Admin:
+  Datastore: postgres
+  Config:
+    DriverName: postgres
+    Descriptor: host=localhost port=5432 user=postgres password=postgres dbname=postgres sslmode=disable
+Recreate: true
+Scripts:
+  - URL: ../sql/newdb.sql
