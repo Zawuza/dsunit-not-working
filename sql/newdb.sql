@@ -9,7 +9,7 @@ CREATE TABLE words(
   name TEXT UNIQUE NOT NULL
 );
 
-CREATE FUNCTION insert_language_trigger() 
+CREATE OR REPLACE FUNCTION insert_language_trigger() 
   RETURNS TRIGGER
   LANGUAGE plpgsql AS
   $$
